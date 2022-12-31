@@ -8,9 +8,9 @@ Git này hướng dẫn sử dụng boar của đề tài "Thiết kế board h�
     + M1, M2: 12V DC
     + Servor x6: 5V DC
     + I2C: 5V DC
-    + Dòng Analog : 3.3VDC QTR-5RC(link: https://www.thegioiic.com/qtr-5rc-cam-bien-do-line-khoang-cach-7mm-ngo-ra-ttl)
-    + Cảm biến siêu âm: 5VDC HC-SR04(link: https://www.thegioiic.com/hc-sr04-cam-bien-sieu-am)
-## Gán chân ESP32 
+    + Dòng Analog : 3.3VDC QTR-5RC    link: https://www.thegioiic.com/qtr-5rc-cam-bien-do-line-khoang-cach-7mm-ngo-ra-ttl
+    + Cảm biến siêu âm: 5VDC HC-SR04  link mua hàng: https://www.thegioiic.com/hc-sr04-cam-bien-sieu-am
+## Chân GPiO chân tín hiệu của thiết bị tích hợp trên board.
 
 |Tên thiết bị          |Nguồn dương  | Nguồn âm |  Chân 1 |  Chân 2 |  Chân 3 |  Chân 4  |  Chân 5 |  Chân 6 |  
 |-----------           |-------------|----------|---------|---------|---------|----------|---------|---------| 
