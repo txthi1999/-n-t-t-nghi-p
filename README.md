@@ -1,56 +1,40 @@
 # STEM
-# Overview
+# Tổng quan
 Git này hướng dẫn sử dụng boar của đề tài "Thiết kế board hỗ trợ giáo dục STEM"
 
-## Power 
-- Input: 12VDC 
-- Output: 
-    + M1, M2: 12VDC
-    + Servor x6: 5VDC
-    + I2C: 3.3V 
-    + Analog line: 3.3VDC QTR-5RC(link: https://www.thegioiic.com/qtr-5rc-cam-bien-do-line-khoang-cach-7mm-ngo-ra-ttl)
-    + Ultra sound: 5VDC HC-SR04(link: https://www.thegioiic.com/hc-sr04-cam-bien-sieu-am)
-## Onboard Peripheral 
-|Block                                  |Component  |
-|---------------------------------------|-----------|
-|Buzzer                                 |KLJ-7525   |
-|Output PWM expander,I2C conmunicate    |PCA9685    |
-|H-Bridge                               |TB6612     |
-|USB to UART                            |CP1202     |
+## Nguồn điện
+- Đầu vào: 12VDC 
+- Nguồn ra: 
+    + M1, M2: 12V DC
+    + Servor x6: 5V DC
+    + I2C: 5V DC
+    + Dòng Analog : 3.3VDC QTR-5RC(link: https://www.thegioiic.com/qtr-5rc-cam-bien-do-line-khoang-cach-7mm-ngo-ra-ttl)
+    + Cảm biến siêu âm: 5VDC HC-SR04(link: https://www.thegioiic.com/hc-sr04-cam-bien-sieu-am)
+## Gán chân ESP32 
 
-## ESP32 pin assignment
-|GPIO       |Function       |
-|-----------|---------------|
-|IO23       |PWMA - TB6612  |
-|IO22       |PWMB - TB6612  |
-|IO4        |AIN1 - TB6612  |
-|IO2        |AIN2 - TB6612  |
-|IO17       |BIN1 - TB6612  |
-|IO5        |BIN2 - TB6612  |
-|IO21       |BUZZER         |
-|IO27       |USER BUTTON    |
-|SENSOR_VP  |ADC1           |
-|SENSOR_VN  |ADC2           |
-|IO34       |ADC3           |
-|IO35       |ADC4           |
-|IO18       |SDA            |
-|IO19       |SCL            |
-|IO13       |MOSI           |
-|IO15       |CS             |
-|IO14       |SCK            |
-|IO32       |TRIG           |
-|IO33       |ECHO           |
+|Tên thiết bị          |Nguồn dương  | Nguồn âm |  Chân 1 |  Chân 2 |  Chân 3 |  Chân 4  |  Chân 5 |  Chân 6 |  
+|-----------           |-------------|----------|---------|---------|---------|----------|---------|---------| 
+|Led RGB               |     5V      |    GND   |   D25   |         |         |          |         |         |                      
+|Buzzer                |     5V      |    GND   |   D26   |         |         |          |         |         |         
+|Button                |     5V      |    GND   |   D19   |         |         |          |         |         |                                          
+|MPU                   |     5V      |    GND   |   SDA   |   SCL   |    D32  |          |         |         |       
+|Cảm biến siêu âm      |     5V      |    GND   |   D25   |   D13   |   D16   |   D17    |         |         |         
+|Cảm biến dò line      |     5V      |    GND   |   D36   |   D39   |   D34   |   D35    |         |         |        
+|L293D                 |     5V      |    GND   | IN1_D2  |  IN2_D5 | IN3_D27 |  IN4_D4  | EN1_D23 | EN2_D15 | 
 
-## PCA pin assignment 
-I2C address pin A0A1A2A3A4A5 = 000000
-|PIN        |Connected      |
-|-----------|---------------|
-|LED0       |Servo 1        |
-|LED1       |Servo 2        |
-|LED2       |Servo 3        |
-|LED3       |Servo 4        |
-|LED4       |Servo 5        |
-|LED5       |Servo 6        |
+## Các chân tín hiệu của cổng Servo_X
+|Tên cổng   |Nguồn dương|Nguồn âm |Chân tín hiệu Servo |Chân tích hợp 1|Chân tích hợp 2|
+|-----------|-----------|----------|-------------------|---------------|---------------|
+|Servo 1    |5V         |GND       |SV1                |D14            |D33            |
+|Servo 2    |5V         |GND       |SV2                |D17            |D36            |
+|Servo 3    |5V         |GND       |SV3                |D16            |D39            |
+|Servo 4    |5V         |GND       |SV4                |D12            |D32            |
+|Servo 5    |5V         |GND       |SV5                |D25            |D35            |
+|Servo 6    |5V         |GND       |SV6                |D13            |D34            |
+
+## Các chân tín hiệu của I2C
+|I2C     |5V      |GND    |SCL_D22     |SDA_D21    |
+|--------|--------|-------|------------|-----------|
 
 
 ## Connector 
