@@ -1,0 +1,16 @@
+Chương trình học sẽ được phân bổ từ cơ bản đến nâng cao, nhằm giúp người học có thể hiểu và tận dụng được lượng kiến thức đã học để làm những dự án thực tế lớn hơn như sau:
+Lập trình C trên arduino IDE và Python
+- Bài 1: Hướng dẫn cài đặt môi trường và board.
+- Bài 2: Nạp chương trình, xuất các chuỗi hoặc ký tự lên cửa sổ Serial.
+- Bài 3: Điều khiển led.
+- Bài 4: Đọc tín hiệu nút nhấn, điều khiển đèn led bằng nút nhấn. (Làm quen với tín hiệu digital).
+- Bài 5: Điều khiển độ sáng của led (Làm quen với tín hiệu analog).
+- Bài 6: Điều khiển bật tắt đèn bằng remote.
+- Bài 7: Cảnh báo góc nghiêng.
+- Bài 8: Điều khiển động cơ thuận nghịch, tốc độ động cơ.
+- Bài 9: Điều khiển servo.
+- Bài 10: Hiển thị thông tin lên màn hình LCD.
+- Bài 11:  Điều khiển thiết bị thông qua Bluetooth.
+- Bài 12: Điều khiển thiết bị qua app blynk.
+- Project 1: Xe điều khiển Bluetooth có tay gắp, tránh vật cản.
+- Project 2: Nhà thông minh IOT
